@@ -9,7 +9,8 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost/testupload');
 /* updaload */
 var multer  = require('multer')
-var upload = multer({ dest: 'uploads/' })
+var path = require('path');
+// var upload = multer({ dest: 'uploads/' })
 
 
 var index = require('./routes/index');
