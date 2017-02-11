@@ -82,6 +82,8 @@ var storage = multer.diskStorage({
 })
 
 var upload = multer({ storage: storage })
+
+app.use(upload.single('picture'))
 ```
 
 # Server side | controller
